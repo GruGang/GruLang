@@ -26,6 +26,9 @@ This proposal is expressly **not** trying to solve:
 
 This framework is speed, brah.
 
+### Reserved Keywords
+Reserved Keywords include: `finna`, `nocap`, `cap`, `bet`, `sus`, `ong`, `oof`, `yeet`, `fr`, `lowkey`, `dead`, `boomer`, `smash`
+
 ### You FR Tho? (FAQ)
 
 ### Cope Zone (Errata)
