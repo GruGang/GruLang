@@ -1,5 +1,5 @@
 
-type gruKeyword = "finna" | "nocap" | "cap" | "oof" | "yikes" | "fr" | "yeet" | "smash" | "fresh" | "fr" | "lowkey" | "fr lowkey" | "ded" | "bet" | "Gotchu()" | "sheesh" | "bussin" | "bless" | "sus" | "ongod" | "holUp()" | "kms" | "slide.dm()" | "Fam" | "Chad" | "Gigachad"
+type gruKeyword = "finna" | "nocap" | "cap" | "oof" | "yikes" | "facts" | "yeet" | "smash" | "fresh" | "fr" | "lowkey" | "fr lowkey" | "ded" | "bet" | "be" |"====" | "W" | "L" |"Gotchu" | "sheesh" | "bussin" | "bless" | "sus" | "ong" | "holUp" | ":hash:" | ":pencil2:" | "Fam" | "Chad" | "Gigachad" |"boomer" 
 
 export const grumap = new Map<string, gruKeyword>([
   ["function", "finna"],
@@ -7,8 +7,30 @@ export const grumap = new Map<string, gruKeyword>([
   ["false", "cap"],
   ["error", "oof"],
   ["throw", "yikes"],
-  ["const", "fr"],
+  ["const", "facts"],
   ["return", "yeet"],
   ["delete", "smash"],
-  ["function", "fr"],
+  ["new", "fresh"],
+  ["if", "fr"],
+  ["else", "lowkey"],
+  ["else if", "fr lowkey"],
+  ["break", "ded"],
+  ["try", "bet"],
+  ["=", "be"],
+  ["===", "===="],
+  ["?", "W"],
+  [":", "L"],
+  ["Promise", "Gotchu"],
+  ["reject", "sheesh"],
+  ["resolve", "bussin"],
+  ["then", "bless"],
+  ["catch", "sus"],
+  ["finally", "ong"],
+  ["setTimeout", "holUp"],
+  ["number", ":hash:"],
+  ["string", ":pencil2:"],
+  ["Array", "Fam"],
+  ["Object", "Chad"],
+  ["Map", "Gigachad"],
+  ["class", "boomer"],
 ]);
