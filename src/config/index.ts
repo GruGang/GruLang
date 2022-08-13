@@ -15,7 +15,6 @@ type gruKeyword =
   | "ded"
   | "bet"
   | "be"
-  | "do be"
   | "===="
   | "W"
   | "L"
@@ -56,7 +55,6 @@ export const grumap = new Map<string, gruKeyword>([
   ["break", "ded"],
   ["try", "bet"],
   ["=", "be"],
-  ["==", "do be"],
   ["===", "===="],
   ["?", "W"],
   [":", "L"],
