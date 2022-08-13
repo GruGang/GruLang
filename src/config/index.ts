@@ -42,6 +42,8 @@ export const grumap = new Map<string, gruKeyword>([
   ["return", "yeet"],
   ["delete", "smash"],
   ["new", "fresh"],
+
+  // Flow Control
   ["if", "fr"],
   ["else", "lowkey"],
   ["else if", "fr lowkey"],
@@ -51,17 +53,25 @@ export const grumap = new Map<string, gruKeyword>([
   ["===", "===="],
   ["?", "W"],
   [":", "L"],
+
+  // Promises
   ["Promise", "Gotchu"],
   ["reject", "sheesh"],
   ["resolve", "bussin"],
   ["then", "bless"],
   ["catch", "sus"],
   ["finally", "ong"],
-  ["setTimeout", "holUp"],
+
+  // Types
   ["number", ":hash:"],
   ["string", ":pencil2:"],
+
+  // Other shit that I can't be fucked to categorise
+  ["setTimeout", "holUp"],
   ["Array", "Fam"],
   ["Object", "Chad"],
   ["Map", "Gigachad"],
+
+  // TODO: *Maybe* think about OOP
   ["class", "boomer"],
 ]);
