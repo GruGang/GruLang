@@ -2,7 +2,7 @@
   "name": "grulang",
   "version": "0.0.1",
   "description": "We are going to steal The Moon",
-  "main": "index.js",
+  "main": "src/gruc.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/GruGang/GruLang#readme",
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.7.2",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
@@ -31,6 +32,9 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.0",
+    "fs-extra": "^10.1.0",
     "ts-node": "^10.9.1"
   }
 }
