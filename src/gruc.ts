@@ -1,5 +1,5 @@
 import { exit } from "process";
-import { gruKeyword, grumap } from "./config";
+import { grumap } from "./config";
 import { Command } from "commander";
 
 const VERSION_NUMBER = "0.0.1";
@@ -14,10 +14,6 @@ const parseGru: (gruCode: string) => string = (gruCode: string) => {
 
 const fs = require("fs-extra");
 const program = new Command().name("GRU");
-
-const word: gruKeyword = "finna";
-const translatedWord = grumap.get(word);
-console.log(translatedWord);
 
 program
   .description("Tryna parse Gru?")
