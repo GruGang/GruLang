@@ -1,4 +1,4 @@
-export type gruKeyword =
+type gruKeyword =
   | "finna"
   | "nocap"
   | "cap"
@@ -6,10 +6,6 @@ export type gruKeyword =
   | "yikes"
   | "facts"
   | "yeet"
-  | "be"
-  | "===="
-  | "W"
-  | "L"
   | "smash"
   | "fresh"
   | "fr"
@@ -17,6 +13,10 @@ export type gruKeyword =
   | "fr lowkey"
   | "ded"
   | "bet"
+  | "be"
+  | "===="
+  | "W"
+  | "L"
   | "Gotchu"
   | "sheesh"
   | "bussin"
@@ -24,11 +24,12 @@ export type gruKeyword =
   | "sus"
   | "ong"
   | "holUp"
+  | ":hash:"
+  | ":pencil2:"
   | "Fam"
   | "Chad"
   | "Gigachad"
-  | ":hash:"
-  | ":pencil2:";
+  | "boomer";
 
 export const grumap = new Map<string, gruKeyword>([
   // Main keywords
@@ -41,8 +42,6 @@ export const grumap = new Map<string, gruKeyword>([
   ["return", "yeet"],
   ["delete", "smash"],
   ["new", "fresh"],
-
-  // Flow Control
   ["if", "fr"],
   ["else", "lowkey"],
   ["else if", "fr lowkey"],
@@ -51,23 +50,18 @@ export const grumap = new Map<string, gruKeyword>([
   ["=", "be"],
   ["===", "===="],
   ["?", "W"],
-  [",", "L"],
-
-  // Promises
+  [":", "L"],
   ["Promise", "Gotchu"],
   ["reject", "sheesh"],
   ["resolve", "bussin"],
   ["then", "bless"],
   ["catch", "sus"],
   ["finally", "ong"],
-
-  // Types
+  ["setTimeout", "holUp"],
   ["number", ":hash:"],
   ["string", ":pencil2:"],
-
-  // Other shit that I can't be fucked to categorise
-  ["setTimeout", "holUp"],
   ["Array", "Fam"],
   ["Object", "Chad"],
   ["Map", "Gigachad"],
+  ["class", "boomer"],
 ]);
