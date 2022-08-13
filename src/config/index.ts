@@ -6,6 +6,7 @@ type gruKeyword =
   | "yikes"
   | "facts"
   | "yeet"
+  | "nah"
   | "smash"
   | "fresh"
   | "fr"
@@ -14,6 +15,7 @@ type gruKeyword =
   | "ded"
   | "bet"
   | "be"
+  | "do be"
   | "===="
   | "W"
   | "L"
@@ -31,6 +33,9 @@ type gruKeyword =
   | "Gigachad"
   | "boomer";
 
+export const lineCommentPrefix = "//";
+export const goodPracticeComment = "IYKYK";
+
 export const grumap = new Map<string, gruKeyword>([
   // Main keywords
   ["function", "finna"],
@@ -42,6 +47,7 @@ export const grumap = new Map<string, gruKeyword>([
   ["return", "yeet"],
   ["delete", "smash"],
   ["new", "fresh"],
+  ["null", "nah"],
 
   // Flow Control
   ["if", "fr"],
@@ -50,6 +56,7 @@ export const grumap = new Map<string, gruKeyword>([
   ["break", "ded"],
   ["try", "bet"],
   ["=", "be"],
+  ["==", "do be"],
   ["===", "===="],
   ["?", "W"],
   [":", "L"],

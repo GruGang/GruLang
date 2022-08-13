@@ -1,14 +1,29 @@
 import { exit } from "process";
-import { grumap } from "./config";
+import { goodPracticeComment, grumap, lineCommentPrefix } from "./config";
 import { Command } from "commander";
 
 const VERSION_NUMBER = "0.0.1";
 
 const parseGru: (gruCode: string) => string = (gruCode: string) => {
-  let tsCode = gruCode.replace("finna", "function");
+  let tsCode = gruCode.replaceAll("finna", "function");
+
   for (let entry of grumap.entries()) {
-    tsCode = tsCode.replace(entry[1], entry[0]);
+    tsCode = tsCode.replaceAll(entry[1], entry[0]);
   }
+
+  tsCode.split("\n").forEach((line, i) => {
+    const commentIdx = line.indexOf(lineCommentPrefix);
+    if (commentIdx < 0) return;
+
+    if (!line.slice(commentIdx).includes(goodPracticeComment)) {
+      console.log(
+        `WARNING: Line: ${
+          i + 1
+        }. Every comment should contain ${goodPracticeComment}!`
+      );
+    }
+  });
+
   return tsCode;
 };
 

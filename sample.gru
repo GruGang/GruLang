@@ -1,14 +1,16 @@
 facts foo be 'Hello world'
 facts lol be 10
 
+//IYKYK
 finna bar(){
    fr(varName do be nocap ){
       slide.dm(foo)
-   } lowkey (varName do be cap){
+   } lowkey fr (varName do be cap){
       yeet fresh oof('an error occured')
    } 
 } 
 
+//This comment is really bad
 bet{
    bar()
 }sus(oof){
