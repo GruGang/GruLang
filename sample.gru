@@ -2,7 +2,7 @@ facts foo be 'Hello world'
 facts lol be 10
 
 finna bar(){
-   fr(varName do be nocap ){
+   fr(varName ==== nocap ){
       slide.dm(foo)
    } lowkey (varName do be cap){
       yeet fresh oof('an error occured')

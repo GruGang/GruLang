@@ -1,14 +1,11 @@
 import { exit } from "process";
-import { grumap } from "./config";
 import { Command } from "commander";
+import { gruLex, GruToken } from "./grulex";
 
 const VERSION_NUMBER = "0.0.1";
 
-const parseGru: (gruCode: string) => string = (gruCode: string) => {
-  let tsCode = gruCode.replace("finna", "function");
-  for (let entry of grumap.entries()) {
-    tsCode = tsCode.replace(entry[1], entry[0]);
-  }
+const parseGru: (gruCode: string) => Array<GruToken> = (gruCode: string) => {
+  let tsCode = gruLex(gruCode);
   return tsCode;
 };
 
@@ -30,7 +27,12 @@ if (!args[0]) {
   process.exit(1);
 }
 const sourceCode: string = fs.readFileSync(args[0]).toString();
-const parsedCode: string = parseGru(sourceCode);
-process.stdout.write(parsedCode);
+const parsedCode: Array<GruToken> = parseGru(sourceCode);
+process.stdout.write(
+  parsedCode.reduce(
+    (prev: string, current: GruToken) => `${prev}\n${JSON.stringify(current)}`,
+    ""
+  )
+);
 
 exit(0);
