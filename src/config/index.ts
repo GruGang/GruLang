@@ -26,6 +26,7 @@ type gruKeyword =
   | "holUp"
   | ":hash:"
   | ":pencil2:"
+  | "like"
   | "Fam"
   | "Chad"
   | "Gigachad"
@@ -65,6 +66,7 @@ export const grumap = new Map<string, gruKeyword>([
   // Types
   ["number", ":hash:"],
   ["string", ":pencil2:"],
+  ["typeof", "like"],
 
   // Other shit that I can't be fucked to categorise
   ["setTimeout", "holUp"],
