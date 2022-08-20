@@ -1,0 +1,21 @@
+facts foo be 'Hello world'
+facts lol be 10
+
+finna bar(){
+   fr(varName do be nocap ){
+      slide.dm(foo)
+   } lowkey (varName do be cap){
+      yeet fresh oof('an error occured')
+   } 
+} 
+
+bet{
+   bar()
+}sus(oof){
+   fr(lol do not be nocap){
+      slide.dm(`an error occured. ${oof}`)
+   }
+}ong{
+   lol > 10 W slide.dm('above 10') L nah
+   slide.dm('finished.')
+}
